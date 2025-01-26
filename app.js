@@ -23,23 +23,23 @@ async function checkWeather(city) {
             data.main.humidity + ' %';
         document.querySelector('#wind').innerHTML = data.wind.speed + ' km/hr';
         if (data.weather[0].main == 'Clouds') {
-            weatherIcon.src = 'images/clouds.png';
-            card.style.backgroundImage = `url('gifs/cloud.gif')`;
+            weatherIcon.src = './clouds.png';
+            card.style.backgroundImage = `url('/cloud.gif')`;
         } else if (data.weather[0].main == 'Clear') {
-            weatherIcon.src = 'images/clear.png';
-            card.style.backgroundImage = `url('gifs/clear.gif')`;
+            weatherIcon.src = './clear.png';
+            card.style.backgroundImage = `url('./clear.gif')`;
         } else if (data.weather[0].main == 'Rain') {
-            weatherIcon.src = 'images/rain.png';
-            card.style.backgroundImage = `url('gifs/rain.gif')`;
+            weatherIcon.src = './rain.png';
+            card.style.backgroundImage = `url(./rain.gif')`;
         } else if (data.weather[0].main == 'Haze') {
-            weatherIcon.src = 'images/mist.png';
-            card.style.backgroundImage = `url('gifs/mist.gif')`;
+            weatherIcon.src = './mist.png';
+            card.style.backgroundImage = `url('./mist.gif')`;
         } else if (data.weather[0].main == 'Mist') {
-            weatherIcon.src = 'images/mist.png';
-            card.style.backgroundImage = `url('gifs/mist.gif')`;
+            weatherIcon.src = './mist.png';
+            card.style.backgroundImage = `url('./mist.gif')`;
         } else if (data.weather[0].main == 'Smoke') {
-            weatherIcon.src = 'images/mist.png';
-            card.style.backgroundImage = `url('gifs/mist.gif')`;
+            weatherIcon.src = '/mist.png';
+            card.style.backgroundImage = `url('./mist.gif')`;
         }
         document.querySelector('#weather').style.display = 'block';
         document.querySelector('#error').style.display = 'none';
